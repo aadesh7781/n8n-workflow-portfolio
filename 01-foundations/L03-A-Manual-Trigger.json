@@ -1,0 +1,83 @@
+{
+  "name": "L03-A-Manual-Trigger",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "b5a0c668-a831-4c78-b86d-19a9da23e36c",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "e50d2742-6c52-43a2-b661-87381c0c8c73",
+              "name": "event_type",
+              "value": "Manual Execution",
+              "type": "string"
+            },
+            {
+              "id": "2d20caeb-c578-4671-b8f1-8a6cf7fb1dfc",
+              "name": "triggered_by",
+              "value": "User",
+              "type": "string"
+            },
+            {
+              "id": "0953fa7d-d700-4945-b334-6a2539348c53",
+              "name": "workflow_name",
+              "value": "L03-A-Manual-Trigger",
+              "type": "string"
+            },
+            {
+              "id": "d3dd4260-6559-4379-812c-020a45009e88",
+              "name": "status",
+              "value": "Started",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "0d29f689-3be1-4bbe-b165-c6cb3680bf7c",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "415776e9-197d-4059-b93e-e06551d59ffc",
+  "meta": {
+    "instanceId": "17bdce1c52e87c513ac16dd1cc11de96c619fb22104f79f7c196d908464c8edd"
+  },
+  "nodeGroups": [],
+  "id": "IMoUV4nGNEklrkto",
+  "tags": []
+}

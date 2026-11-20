@@ -1,0 +1,92 @@
+{
+  "name": "L03-B-Schedule-Trigger",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        0,
+        0
+      ],
+      "id": "0e7b1e80-db97-47cc-b9b2-f376a5d881fd",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a3790e3f-c9a1-4798-a770-b8bcfb9bebd4",
+              "name": "event_type",
+              "value": "Scheduled Execution",
+              "type": "string"
+            },
+            {
+              "id": "192acb20-15ed-45d4-bd46-e661a1007f60",
+              "name": "workflow_name",
+              "value": "L03-B-Schedule-Trigger",
+              "type": "string"
+            },
+            {
+              "id": "3fd36ea4-53bb-4eb1-b835-91b19e1fdac8",
+              "name": "status",
+              "value": "Automatically Triggered",
+              "type": "string"
+            },
+            {
+              "id": "d99cc226-a484-46e7-ad26-74eeb1833d64",
+              "name": "source",
+              "value": "Schedule",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "776589fa-2397-4301-abe6-03e2fbe90117",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "c23ef665-656f-4188-a517-c73ee0352ae6",
+  "meta": {
+    "instanceId": "17bdce1c52e87c513ac16dd1cc11de96c619fb22104f79f7c196d908464c8edd"
+  },
+  "nodeGroups": [],
+  "id": "O1hFuIsMaCazlJaY",
+  "tags": []
+}

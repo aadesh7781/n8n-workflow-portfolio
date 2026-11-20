@@ -1,0 +1,82 @@
+{
+  "name": "L03-C-Webhook-Trigger",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "student-registration",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "b009dd82-8b07-4697-91f0-eb9eff7d63b7",
+      "name": "Webhook",
+      "webhookId": "072f9393-30e3-48cd-b8c7-cafadee40ba8"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "1084ca0d-66fe-4cc5-8768-cc95940a3a9b",
+              "name": "registration_status",
+              "value": "Received",
+              "type": "string"
+            },
+            {
+              "id": "779560b3-1a79-4883-b1b2-794e5f23bc59",
+              "name": "source",
+              "value": "Webhook",
+              "type": "string"
+            },
+            {
+              "id": "edc22317-27f7-495c-b36e-da551c470a0a",
+              "name": "course",
+              "value": "n8n",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "91712187-680e-4e24-b879-cd4e48a0235c",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "40b59eca-76f0-4360-855e-3613f5767378",
+  "meta": {
+    "instanceId": "17bdce1c52e87c513ac16dd1cc11de96c619fb22104f79f7c196d908464c8edd"
+  },
+  "nodeGroups": [],
+  "id": "TKkJvtw0Y8r7hPz9",
+  "tags": []
+}
