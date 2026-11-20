@@ -1,0 +1,77 @@
+{
+  "name": "L01 - My First Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "85ae382b-84cd-4a04-8727-be3e2d89838c",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "373f7af9-645d-4a42-b68e-3d5e5b64ad72",
+              "name": "student_name",
+              "value": "Student 1",
+              "type": "string"
+            },
+            {
+              "id": "35328f30-3c51-4869-94a3-4d99a27c8b24",
+              "name": "course",
+              "value": "n8n",
+              "type": "string"
+            },
+            {
+              "id": "72cab0fc-f986-4754-9c60-60366702a60a",
+              "name": "learning_status",
+              "value": "Started",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        176,
+        0
+      ],
+      "id": "70d65ae0-6d7b-426b-91d7-e56498896811",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "7624e6ac-79a1-4f0e-8ad2-dd33ef8b7b9f",
+  "meta": {
+    "instanceId": "17bdce1c52e87c513ac16dd1cc11de96c619fb22104f79f7c196d908464c8edd"
+  },
+  "nodeGroups": [],
+  "id": "FOQKA0MoMFdZnLmW",
+  "tags": []
+}
