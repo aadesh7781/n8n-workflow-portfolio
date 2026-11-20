@@ -1,18 +1,16 @@
-# L01 - My First Workflow
+## Workflow Gallery
 
-## Workflow Overview
-My first n8n workflow using Manual Trigger and Edit Fields.
+### L01 - First Workflow
+![L01](L01.png)
 
-## Nodes Used
-- Manual Trigger
-- Edit Fields
+### L02 - Data Flow
+![L02](L02.png)
 
-## Workflow Screenshot
+### L03A - Manual Trigger
+![L03A](L03A.png)
 
-![My First Workflow](L01.png)
+### L03B - Schedule Trigger
+![L03B](L03B.png)
 
-## Concepts Learned
-- Workflow fundamentals
-- Nodes and connections
-- Manual execution
-- JSON output
+### L03C - Webhook Trigger
+![L03C](L03C.png)
