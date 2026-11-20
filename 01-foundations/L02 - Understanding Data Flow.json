@@ -1,0 +1,118 @@
+{
+  "name": "L02 - Understanding Data Flow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        16
+      ],
+      "id": "f1fd8940-3948-417f-bb79-4a06d6648295",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d19dc5a8-64fe-4f8f-978e-6a4a0904634b",
+              "name": "customer_name",
+              "value": "Aadesh",
+              "type": "string"
+            },
+            {
+              "id": "bb41d262-7889-40b1-a747-1fa0b1b66a8d",
+              "name": "email",
+              "value": "aadesh@example.com",
+              "type": "string"
+            },
+            {
+              "id": "9141b523-950d-4bcb-932a-96887997df45",
+              "name": "age",
+              "value": 34,
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        -16,
+        16
+      ],
+      "id": "1885b52c-0d8b-4133-a061-2b90adea1b2f",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c3218f31-f44a-458a-936f-8e0b7f166a5e",
+              "name": "customer_type",
+              "value": "Premium",
+              "type": "string"
+            },
+            {
+              "id": "50bc3fbb-375d-4ccd-8239-fee215a70d9b",
+              "name": "account_status",
+              "value": "Active",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        160,
+        16
+      ],
+      "id": "ceab96ed-df07-4f42-8491-8ff45b7dd19b",
+      "name": "Edit Fields1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "f8b7c25b-0bb6-4b17-8dd9-845598874751",
+  "meta": {
+    "instanceId": "17bdce1c52e87c513ac16dd1cc11de96c619fb22104f79f7c196d908464c8edd"
+  },
+  "nodeGroups": [],
+  "id": "88yOkv2g8yctbhpz",
+  "tags": []
+}
