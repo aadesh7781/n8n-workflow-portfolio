@@ -9,7 +9,7 @@ My first n8n workflow using Manual Trigger and Edit Fields.
 
 ## Workflow Screenshot
 
-![My First Workflow](L01-first-workflow.png)
+![My First Workflow](L01.png)
 
 ## Concepts Learned
 - Workflow fundamentals
